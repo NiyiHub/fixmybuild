@@ -316,6 +316,8 @@ p {
 }
 
 .section__tagline {
+    float: right;
+    align-self: center;
     text-align: left;
 }
 
@@ -325,14 +327,32 @@ p {
     color: #fff;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+    .create__estimate {
+        background-image: url(../images/navigator.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position-y: 70%;
+        padding: 5rem;
+    }
+
     .create__estimate--content {
         width: 100%;
     }
 
-    .create__estimate--paragraph {
+    .create__estimate--paragraph,
+    .estimate__paragraph {
         font-size: 1.8rem;
+    }
+
+    .estimate__paragraph {
+        text-align: left;
+    }
+
+    .tagline {
+        font-size: 4rem;
     }
 
 
 }
+  
