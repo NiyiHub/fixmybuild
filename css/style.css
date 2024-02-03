@@ -78,6 +78,13 @@ p {
     cursor: pointer;
     white-space: nowrap;
     margin: 1rem 0;
+    text-decoration: none;
+}
+
+.btn--streched {
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 1.5rem 3rem 1.5rem;
 }
 
 .btn--primary {
@@ -187,6 +194,45 @@ p {
     }
 
     .testimonial__paragraph {
+        font-size: 1.8rem;
+    }
+}
+
+
+/* Hero */
+.hero {
+    background: var(--color-secondary);
+}
+
+.hero__content {
+    color: var(--color-body);
+    text-align: left;
+    align-self: center;
+    margin-left: 5rem ;
+}
+
+.hero__heading {
+    letter-spacing: -3px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.hero__paragraph {
+    letter-spacing: 1px;
+    margin-bottom: 3rem;
+}
+
+.hero__image {
+    margin: 3rem 0 3rem;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .hero__heading {
+        letter-spacing: 0;
+    }
+
+    .hero__paragraph {
         font-size: 1.8rem;
     }
 }
