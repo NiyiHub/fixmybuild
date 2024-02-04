@@ -352,7 +352,74 @@ p {
     .tagline {
         font-size: 4rem;
     }
-
-
 }
+
+/* About */
+  .about {
+    background: var(--color-primary);
+    padding-top: 2rem; 
+  }
+
+  .about__heading {
+    color: var(--color-accent);
+    text-align: center;
+  }
+
+  .accordion {
+    width: 100%;
+    margin: 50px auto;
+    background: var(--color-primary);
+    padding: 5rem;
+  }
   
+  .accordion input {
+    display: none;
+  }
+  
+  .accordion-label {
+    font-size: var(--font-size-big);
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    background-color: var(--color-primary);
+    cursor: pointer;
+  }
+
+  .accordion-label:not(:first-child) {
+    border-top: 0.5px solid var(--color-secondary);
+  }
+  
+  .icon {
+    font-size: 4rem;
+    font-weight: 300;
+  }
+  
+  .accordion-content {
+    font-size: var(--font-size-small);
+    font-weight: 400;
+    color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+  
+  input:checked + .accordion-label + .accordion-content {
+    max-height: 1000px; /* Adjust this value to fit your content */
+  }
+  
+  input:checked + .accordion-label .icon {
+    content: "-";
+  }
+
+  @media screen and (min-width: 768px) {
+    .accordion-label {
+        font-size: 1.8rem;
+    }
+
+    .accordion-content {
+        width: 50%;
+    }
+  }
