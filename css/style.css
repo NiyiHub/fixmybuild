@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
 :root {
     --color-primary: #061A48;
     --color-secondary: #f6f6f6;
@@ -188,29 +190,95 @@ p {
 }
 
 /* Testimonials */
+.testimonial__heading {
+    font-size: 2.2rem;
+}
+
+.testimonial__paragraph {
+    font-size: 1.8rem;
+}
+
+.carousel {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    height: 100%;
+    display: flex;
+    width: 400%;
+    transition: all 0.5s;
+}
+
+.slider section {
+    flex-basis: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
 .testimonial__heading,
 .testimonial__paragraph {
     color: #333;
+    text-align: center;
+    margin-bottom: 0;
+
 }
 
 .testimonial__heading {
-    font-size: var(--font-size-big);
-    font-weight: 500;
+    margin-top: 0;
 }
 
-.testimonial__paragraph {
-    font-size: var(--font-size-small);
-    font-weight: 400;
-    line-height: 1.5;
+.controls .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
 }
 
-@media screen and (min-width: 768px) {
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
+}
+
+.controls ul {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%);
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.controls ul li {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #CD4726;
+    border-radius: 50px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.controls ul li.selected {
+    background: #CD4726;
+}
+
+@media screen and (max-width: 768px) {
     .testimonial__heading {
-        font-size: 2.2rem;
+        font-size: var(--font-size-big);
+        font-weight: 500;
     }
 
     .testimonial__paragraph {
-        font-size: 1.8rem;
+        font-size: var(--font-size-small);
+        font-weight: 400;
+        line-height: 1.5;
     }
 }
 
@@ -274,7 +342,7 @@ p {
 
 @media screen and (min-width: 768px) {
     .apply__content {
-        display: flex;
+       display: flex;
         justify-content: center;
         gap: 3rem;
     }
@@ -601,13 +669,66 @@ p {
         color: var(--color-accent);
     }
 
-    /* .hamburger,
+    .hamburger,
     .toggle-menu {
         display: none;
-    } */
+    }
 }
 
 @media screen and (max-width: 768px) {
+    .header {
+        padding: 1rem 2rem;
+    }
+
+    .navigation--desktop {
+        display: none;
+    }
+
+    .logo a {
+        display: block;
+    }
+    
+    .logo a img {
+        display: block;
+        width: 100%;
+    }
+    
+    .navigation--mobile {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu--mobile {
+        display: block;
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        background: #fff;
+        width: 300px;
+        height: 100%;
+        padding-top: 65px;
+    }
+
+    .menu--mobile li {
+        list-style-type: none;
+        width: 100%;
+    }
+
+    .menu--mobile li a,
+    .menu--mobile li a:hover {
+        padding: 30px;
+        font-size: 2.4rem;
+    }
+    
+    .menu--mobile li a:hover {
+        color: var(--color-accent);
+    }
+
     .hamburger {
         position: relative;
         width: 30px;
@@ -671,58 +792,5 @@ p {
     
     .navigation--mobile input:checked ~ .menu--mobile {
         right: 0;
-    }
-
-    .header {
-        padding: 1rem 2rem;
-    }
-
-    .navigation--desktop {
-        display: none;
-    }
-
-    .logo a {
-        display: block;
-    }
-    
-    .logo a img {
-        display: block;
-        width: 100%;
-    }
-    
-    .navigation--mobile {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .menu--mobile {
-        display: block;
-        justify-content: start;
-        flex-direction: column;
-        align-items: center;
-        position: fixed;
-        top: 0;
-        right: -300px;
-        background: #fff;
-        width: 300px;
-        height: 100%;
-        padding-top: 65px;
-    }
-
-    .menu--mobile li {
-        list-style-type: none;
-        width: 100%;
-    }
-
-    .menu--mobile li a,
-    .menu--mobile li a:hover {
-        padding: 30px;
-        font-size: 2.4rem;
-    }
-    
-    .menu--mobile li a:hover {
-        color: var(--color-accent);
     }
 }
