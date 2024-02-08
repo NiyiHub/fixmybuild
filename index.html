@@ -11,7 +11,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">  
+    <header class="header">
+        <a href="/" class="logo">
+            <img src="images/logo..png" alt="">
+        </a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul class="menu">
+            <li><a href="#">Start</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Search trades</a></li>
+            <li><a href="#">Guides</a></li>
+            <li><a href="#"><img src="images/user-icon.png" alt="logo">Login</a></li>
+            <li><a href="#" class="btn" id="btn--secondary">Register</a></li>
+        </ul>
+    </header>
+    <header class="header-desktop">  
         <div class="navigation--desktop container">
             <ul class="menu--desktop">
                 <li><a href="#">Start</a></li>
@@ -31,93 +46,41 @@
                 <li><a href="#" class="btn" id="btn--secondary">Register</a></li>
             </ul>
         </div>
-
-        <div class="navigation--mobile container">
-
-            
-            <div class="logo">
-                <a href="#">
-                    <img src="images/logo..png" alt="logo">
-                </a>
-            </div>
-
-            <input type="checkbox" class="toggle-menu">
-            <div class="hamburger"></div>
-
-            <ul class="menu--mobile">
-                <li><a href="#">Start</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Search trades</a></li>
-                <li><a href="#">Guides</a></li>
-                <li><a href="#"><img src="images/user-icon.png" alt="logo">Login</a></li>
-                <li><a href="#" class="btn" id="btn--secondary">Register</a></li>
-            </ul>
-        </div>
     </header>
-    
-    <section class="block block__testimonial">
+    <section class="about">
         <div class="container">
-            <div class="block__heading">
-                <h2>
-                    Testmonials
-                </h2>
-            </div>
-            <div class="carousel">
-                <div class="slider">
-                    <section>
-                        <p class="testimonial__paragraph">
-                            Estimates are written to our website and delivered to customers. This saves you money by not requiring separate estimation and invoicing software.
-                        </p>
-                        <h3 class="testimonial__heading">
-                            Kyla Harmon
-                        </h3>
-                    </section>
-                    <section>
-                        <p class="testimonial__paragraph">
-                            Estimates are written to our website and delivered to customers. This saves you money by not requiring separate estimation and invoicing software.
-                        </p>
-                        <h3 class="testimonial__heading">
-                            Ryan Menzie
-                        </h3>
-                    </section>
-                    <section>
-                        <p class="testimonial__paragraph">
-                            Estimates are written to our website and delivered to customers. This saves you money by not requiring separate estimation and invoicing software.
-                        </p>
-                        <h3 class="testimonial__heading">
-                            Aldrich Fowler
-                        </h3>
-                    </section>
-                    <section>
-                        <p class="testimonial__paragraph">
-                            Estimates are written to our website and delivered to customers. This saves you money by not requiring separate estimation and invoicing software.
-                        </p>
-                        <h3 class="testimonial__heading">
-                            Aldrich Fowler
-                        </h3>
-                    </section>
+            <h2 class="about__heading">
+                Why choose us?
+            </h2>
+            <div class="accordion">
+                <input type="checkbox" id="section1">
+                <label for="section1" class="accordion-label">
+                    Pick up jobs for free
+                  <span class="icon">+</span>
+                </label>
+                <div class="accordion-content">
+                  <p>There's plenty of work available in the UK, so rather than paying websites to gain work, why not sign up with Fix My Build and pick up jobs at your convenience for free?</p>
                 </div>
-                <div class="controls">
-                    <span class="arrow left">
-                        <span class="material-icons">
-                        chevron_left
-                        </span>
-                    </span>
-                    <span class="arrow right">
-                        <span class="material-icons">
-                        chevron_right
-                        </span>
-                    </span>
-                    <ul>
-                        <li class="sele"></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+            
+                <input type="checkbox" id="section2">
+                <label for="section2" class="accordion-label">
+                  Decide the work you want to do
+                  <span class="icon">+</span>
+                </label>
+                <div class="accordion-content">
+                  <p>Unlike other platforms and online directories, there's no registration fee, no membership fee, and no fees for leads. You have full control over the type and amount of work you want to take on.</p>
+                </div>
+                <input type="checkbox" id="section3">
+                <label for="section3" class="accordion-label">
+                  Grow your business without any hidden cost
+                  <span class="icon">+</span>
+                </label>
+                <div class="accordion-content">
+                  <p>We believe that companies shouldn't have to pay money to simply be visible on the internet, or to provide customers a free estimation service. That's why we don't charge you for writing estimates for free, or for delivering them to customers. We only add a very small capped platform fee on top of your estimates, which is at most either 5% + VAT (i.e. 6%) of your total esimate, or £50 + VAT (i.e. £60), which is less. This means even if you create an estimate for £40,000 we add £60 on top, and the customer would recieve an estimate for £40,060.</p>
                 </div>
             </div>
         </div>
-    </section>
+      </section>
       
     <script src="js/main.js"></script>
 </body>
