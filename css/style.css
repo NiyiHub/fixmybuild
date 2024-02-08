@@ -505,7 +505,7 @@ p {
     width: 100%;
   }
   
-  input:checked + label::after {
+  input:checked + .accordion-label::after {
     content: "_";
     font-size: 4rem;
     font-weight: 300;
