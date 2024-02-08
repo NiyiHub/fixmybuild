@@ -115,7 +115,7 @@ p {
 }
 
 .block__testimonial {
-    /*display: none; Delete this line of code to activate the testimonials block */
+    display: none;/* Delete this line of code to activate the testimonials block */
     background-color: #F4C095;
 }
 
