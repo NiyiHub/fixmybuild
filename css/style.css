@@ -96,7 +96,7 @@ p {
 }
 
 .btn--primary:hover {
-    background-color: #e47448;
+    background: var(--color-primary);
 }
 
 #btn--secondary {
@@ -356,6 +356,10 @@ p {
     .apply__tagline {
         font-size: 2.4rem;
     }
+
+    .apply div a {
+        padding: 1.5rem 3.5rem;
+    }
 }
 
 /* Creating Estimate */
@@ -481,7 +485,8 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     background-color: var(--color-primary);
     cursor: pointer;
   }
@@ -499,7 +504,13 @@ p {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
+    /* padding-bottom: 2rem; */
   }
+
+  .accordion__paragraph{
+    line-height: 1.8;
+  }
+
   .accordion-label + .accordion-content{
     border-bottom: 0.5px solid var(--color-secondary);
     width: 100%;
@@ -527,7 +538,8 @@ p {
     }
 
     .accordion__paragraph {
-        width: 50%;
+        width: 60%;
+        font-size: 1.8rem;
       }
   }
 
