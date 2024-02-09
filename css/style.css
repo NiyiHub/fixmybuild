@@ -86,7 +86,8 @@ p {
 .btn--streched {
     font-size: 1.6rem;
     font-weight: 700;
-    padding: 1.5rem 3rem 1.5rem;
+    padding: 1.7rem 3rem 1.5rem;
+
 }
 
 .btn--primary {
@@ -666,9 +667,17 @@ p {
         display: block;
         padding: 1rem;
         font-size: 2rem;
-        font-weight: 400;
-        line-height: 1;
+        font-weight: 500;
+        line-height: auto;
         transition: .3s;
+    }
+
+    .user li a img {
+        margin-right: 7px;
+    }
+
+    .user li a:hover img {
+        filter: invert(48%) sepia(54%) saturate(746%) hue-rotate(354deg) brightness(101%) contrast(99%);
     }
     
     .menu--desktop li a:hover,
@@ -730,6 +739,20 @@ p {
         clear: both;
         max-height: 0;
         transition: max-height .2s ease-out;
+    }
+
+    .menu li a {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: auto;
+    }
+
+    .menu li a img {
+        margin-right: 7px;
+    }
+
+    .menu li a:hover img {
+        filter: invert(48%) sepia(54%) saturate(746%) hue-rotate(354deg) brightness(101%) contrast(99%);
     }
       
     /* menu icon */
