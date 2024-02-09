@@ -660,8 +660,10 @@ p {
         background: #fff;
         padding: 0 2.5rem;
         transition: 0.3s;
+        border-bottom: 1px solid #e0e0e0;
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
+
     }
 
     .navigation--desktop {
@@ -679,6 +681,7 @@ p {
         align-items: center;
         z-index: 1;
         transition: .5s;
+        margin: .6rem;
     }
 
     .menu--desktop li,
@@ -695,7 +698,7 @@ p {
         font-size: 2rem;
         font-weight: 500;
         line-height: auto;
-        transition: .3s;
+        transition: all 0s;
     }
 
     .user li a img {
@@ -703,7 +706,7 @@ p {
     }
 
     .user li a:hover img {
-        filter: invert(48%) sepia(54%) saturate(746%) hue-rotate(354deg) brightness(101%) contrast(99%);
+        filter: invert(40%) sepia(54%) saturate(746%) hue-rotate(354deg) brightness(101%) contrast(200%);
     }
     
     .menu--desktop li a:hover,
