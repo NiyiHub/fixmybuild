@@ -85,7 +85,7 @@ p {
 
 .btn--streched {
     font-size: 1.6rem;
-    font-weight: 700;
+    font-weight: 500;
     padding: 1.7rem 3rem 1.5rem;
 
 }
@@ -357,9 +357,9 @@ p {
         font-size: 2.4rem;
     }
 
-    .apply div a {
+    /* .apply div a {
         padding: 1.5rem 3.5rem;
-    }
+    } */
 }
 
 /* Creating Estimate */
