@@ -356,10 +356,6 @@ p {
     .apply__tagline {
         font-size: 2.4rem;
     }
-
-    /* .apply div a {
-        padding: 1.5rem 3.5rem;
-    } */
 }
 
 /* Creating Estimate */
@@ -384,6 +380,7 @@ p {
 .create__estimate--paragraph {
     color: #fff;
     font-size: 1.2rem;
+    padding-bottom: 3rem;
 }
 
 .create__estimate--steps {
@@ -413,6 +410,11 @@ p {
     float: right;
     align-self: center;
     text-align: left;
+}
+
+.section__tagline a:hover{
+    background: #fff;
+    color: var(--color-primary);
 }
 
 .tagline {
